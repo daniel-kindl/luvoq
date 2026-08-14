@@ -8,4 +8,4 @@ Reliability classifications:
 - YELLOW: permission, Android-version, or OEM caveat exists
 - RED: not reliable enough to ship normally
 
-Phase 0 leaves initial platform capabilities YELLOW until Phase 1 tests foreground, background, killed-process, locked-screen, battery-saver, reboot, Pixel, and Samsung scenarios.
+Phase 0 leaves initial platform capabilities YELLOW until Phase 1 tests foreground, background, killed-process, locked-screen, battery-saver, reboot, Pixel, and Samsung scenarios. See the [Phase 1 automation feasibility matrix](phase-1-feasibility.md) for the required evidence and classification gate.
