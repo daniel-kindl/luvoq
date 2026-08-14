@@ -10,7 +10,7 @@
 
 `:core:ui` contains shared Compose theme and reusable visual components.
 
-`:automation` contains the normalized event and engine boundaries. Platform event adapters and action implementations are deferred until Phase 1 feasibility work.
+`:automation` contains the normalized event and engine boundaries. The first Phase 1 spike adds pure event mappers here; Android-specific receivers and scheduling remain in `:app` and dispatch into the boundary. Routine matching and action implementations remain deferred until feasibility evidence supports them.
 
 Feature modules contain screen-level Compose placeholders and must not implement Bluetooth, Wi-Fi, system settings, or other platform automation logic.
 
