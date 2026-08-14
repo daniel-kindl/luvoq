@@ -62,8 +62,7 @@ class TimeAlarmScheduler @Inject constructor(
     private fun pendingIntent(hour: Int, minute: Int): PendingIntent = PendingIntent.getBroadcast(
         context,
         REQUEST_CODE_BASE + (hour * 60) + minute,
-        Intent(context, TimeReachedReceiver::class.java).apply {
-            setPackage(context.packageName)
+        Intent().setClass(context, TimeReachedReceiver::class.java).apply {
             putExtra(EXTRA_HOUR, hour)
             putExtra(EXTRA_MINUTE, minute)
         },
