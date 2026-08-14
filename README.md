@@ -2,6 +2,13 @@
 
 Your phone, on cue.
 
+[![CI](https://github.com/daniel-kindl/luvoq/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/daniel-kindl/luvoq/actions/workflows/ci.yml)
+[![License: GPLv3](https://img.shields.io/badge/License-GPLv3-blue.svg)](LICENSE)
+[![Kotlin](https://img.shields.io/badge/Kotlin-7F52FF?logo=kotlin&logoColor=white)](https://kotlinlang.org/)
+[![Android](https://img.shields.io/badge/Android-3DDC84?logo=android&logoColor=white)](https://developer.android.com/)
+[![Jetpack Compose](https://img.shields.io/badge/Jetpack%20Compose-4285F4?logo=jetpackcompose&logoColor=white)](https://developer.android.com/compose)
+[![Material 3](https://img.shields.io/badge/Material%203-757575?logo=materialdesign&logoColor=white)](https://m3.material.io/)
+
 Luvoq is a local-first Android phone-automation app intended to make useful routines understandable to normal users without programming concepts.
 
 ## Current state: Phase 0
