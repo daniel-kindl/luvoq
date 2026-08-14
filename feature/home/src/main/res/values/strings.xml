@@ -1,0 +1,10 @@
+<resources>
+    <string name="home_title">Home</string>
+    <string name="home_subtitle">Your phone, on cue.</string>
+    <string name="home_empty_title">No routines yet</string>
+    <string name="home_empty_description">Create a routine to make everyday moments happen automatically.</string>
+    <string name="home_example_routine">Example routine</string>
+    <string name="home_example_summary">A calm place for your routines</string>
+    <string name="home_enabled">Enabled</string>
+    <string name="home_disabled">Disabled</string>
+</resources>

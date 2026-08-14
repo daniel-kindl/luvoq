@@ -1,0 +1,11 @@
+<resources>
+    <string name="editor_title">Routine editor</string>
+    <string name="editor_when">WHEN</string>
+    <string name="editor_when_placeholder">Choose one trigger</string>
+    <string name="editor_only_if">ONLY IF</string>
+    <string name="editor_only_if_placeholder">Add optional conditions</string>
+    <string name="editor_do">DO</string>
+    <string name="editor_do_placeholder">Add at least one action</string>
+    <string name="editor_save">Save routine</string>
+    <string name="editor_back">Back</string>
+</resources>

@@ -1,0 +1,10 @@
+<resources>
+    <string name="settings_title">Settings</string>
+    <string name="settings_theme_title">Theme</string>
+    <string name="settings_theme_description">Use the system appearance for Luvoq.</string>
+    <string name="settings_plan_title">Plan</string>
+    <string name="settings_plan_description">Manage your Luvoq plan and restore purchases later.</string>
+    <string name="settings_plan_action">View plans</string>
+    <string name="settings_about_title">About Luvoq</string>
+    <string name="settings_about_description">Local-first phone automation, designed to stay understandable.</string>
+</resources>

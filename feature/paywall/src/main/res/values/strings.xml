@@ -1,0 +1,10 @@
+<resources>
+    <string name="paywall_title">Choose your plan</string>
+    <string name="paywall_description">Plan choices will be connected after capability value is validated.</string>
+    <string name="paywall_free_title">Free</string>
+    <string name="paywall_free_description">A simple starting point for local routines.</string>
+    <string name="paywall_pro_title">Pro</string>
+    <string name="paywall_pro_description">More room for the routines you rely on.</string>
+    <string name="paywall_continue">Continue</string>
+    <string name="paywall_back">Back</string>
+</resources>

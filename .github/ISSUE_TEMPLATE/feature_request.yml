@@ -1,0 +1,22 @@
+name: Feature request
+description: Suggest an improvement to Luvoq
+title: "feat: "
+labels: [enhancement]
+body:
+  - type: markdown
+    attributes:
+      value: Describe the user outcome without assuming scripting, variables, branching, loops, arbitrary intents, or cloud automation.
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: What normal-user problem should this solve?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposal
+      description: What should Luvoq do?
+    validations:
+      required: true

@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Luvoq</string>
+    <string name="nav_home">Home</string>
+    <string name="nav_templates">Templates</string>
+    <string name="nav_history">History</string>
+    <string name="nav_settings">Settings</string>
+    <string name="nav_create">Create</string>
+    <string name="nav_back">Back</string>
+    <string name="templates_title">Templates</string>
+    <string name="templates_description">Starter ideas will appear here after automation capabilities are validated.</string>
+    <string name="history_title">History</string>
+    <string name="history_description">Execution history will appear here when routines can run.</string>
+    <string name="back_content_description">Navigate back</string>
+    <string name="home_content_description">Home</string>
+    <string name="templates_content_description">Templates</string>
+    <string name="history_content_description">History</string>
+    <string name="settings_content_description">Settings</string>
+</resources>

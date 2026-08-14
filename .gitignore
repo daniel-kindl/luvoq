@@ -1,0 +1,41 @@
+# Gradle
+.gradle/
+build/
+**/build/
+gradle-app.setting
+!gradle/wrapper/gradle-wrapper.jar
+
+# Android Studio
+.idea/
+*.iml
+.navigation/
+captures/
+externalNativeBuild/
+.cxx/
+
+# Local Android configuration
+local.properties
+*.hprof
+
+# Signing and secrets
+*.jks
+*.keystore
+signing.properties
+keystore.properties
+google-services.json
+*.p12
+*.pem
+*.key
+.env
+.env.*
+
+# Generated artifacts
+*.apk
+*.aab
+*.apks
+reports/
+*.log
+
+# OS/editor files
+.DS_Store
+Thumbs.db

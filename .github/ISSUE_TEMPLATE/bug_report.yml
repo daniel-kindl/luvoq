@@ -1,0 +1,27 @@
+name: Bug report
+description: Report a reproducible problem in Luvoq
+title: "bug: "
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: Do not include routine contents, Wi-Fi SSIDs, Bluetooth identifiers, order IDs, tokens, or personal data.
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Reproduction
+      description: Give the smallest reproducible sequence.
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Luvoq version
+    validations:
+      required: true
+  - type: input
+    id: device
+    attributes:
+      label: Device and Android version
+    validations:
+      required: true
