@@ -15,12 +15,18 @@ import dev.danielkindl.luvoq.automation.AutomationEngine
 import dev.danielkindl.luvoq.automation.CapabilityRegistry
 import dev.danielkindl.luvoq.automation.DefaultCapabilityRegistry
 import dev.danielkindl.luvoq.automation.NoOpAutomationEngine
+import dev.danielkindl.luvoq.automation.TriggerEventDispatcher
+import dev.danielkindl.luvoq.automation.platform.ApplicationScope
+import dev.danielkindl.luvoq.automation.platform.AutomationEventDispatcher
 import dev.danielkindl.luvoq.data.analytics.Analytics
 import dev.danielkindl.luvoq.data.analytics.NoOpAnalytics
 import dev.danielkindl.luvoq.data.db.LuvoqDatabase
 import dev.danielkindl.luvoq.data.entitlement.EntitlementRepository
 import dev.danielkindl.luvoq.data.entitlement.LocalEntitlementRepository
 import javax.inject.Singleton
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.SupervisorJob
 
 @Module
 @InstallIn(SingletonComponent::class)
@@ -50,6 +56,17 @@ object AppModule {
     @Provides
     @Singleton
     fun provideAutomationEngine(): AutomationEngine = NoOpAutomationEngine()
+
+    @Provides
+    @Singleton
+    @ApplicationScope
+    fun provideApplicationScope(): CoroutineScope = CoroutineScope(SupervisorJob() + Dispatchers.Default)
+
+    @Provides
+    @Singleton
+    fun provideTriggerEventDispatcher(
+        dispatcher: AutomationEventDispatcher,
+    ): TriggerEventDispatcher = dispatcher
 
     @Provides
     @Singleton

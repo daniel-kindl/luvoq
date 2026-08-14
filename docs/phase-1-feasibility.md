@@ -5,6 +5,24 @@ implementation and it does not promote any capability to a user-facing
 promise. The purpose is to collect repeatable evidence for the event and
 action boundaries already defined in [the architecture](architecture.md).
 
+## Current spike status
+
+The first implementation slice contains:
+
+- a non-exported receiver for charging-connected and charging-disconnected
+  broadcasts;
+- a non-exported receiver for explicit time alarms;
+- a scheduler that uses an exact idle-aware alarm when exact-alarm access is
+  available and an idle-aware fallback otherwise;
+- pure mappers and unit tests for charging, time, and battery-threshold event
+  normalization.
+
+The receivers dispatch into the existing no-op engine. They do not load
+routines, execute actions, persist history, request access at startup, or make
+a user-facing reliability claim. The scheduler reports when exact-alarm
+access was unavailable so a future editor can explain the limitation before
+requesting special access.
+
 ## Goals
 
 Validate the following flow on representative physical devices:

@@ -11,7 +11,7 @@ Your phone, on cue.
 
 Luvoq is a local-first Android phone-automation app intended to make useful routines understandable to normal users without programming concepts.
 
-## Current state: Phase 0
+## Current state: Phase 1 feasibility spike
 
 This repository currently contains the project and repository foundation only:
 
@@ -19,11 +19,13 @@ This repository currently contains the project and repository foundation only:
 - A single-activity navigation shell with Home, Templates, Create, History, Settings, Routine Editor, and Paywall placeholders
 - Framework-free domain models for routines, triggers, conditions, actions, and execution results
 - A placeholder automation engine boundary and an unvalidated capability registry
+- Initial Android platform adapters for charging broadcasts and scheduled time
+  events, dispatching normalized events to the existing no-op engine
 - Room entities for routine and execution storage
 - Local entitlement and no-op analytics abstractions
 - GPLv3 governance, contribution, security, support, and trademark documentation
 
-No automation capability is currently promised or implemented. Phase 1 must validate platform mechanisms on representative Pixel and Samsung devices before any capability is labeled reliable.
+No automation capability is currently promised or executing routines. The Phase 1 spike only validates event delivery and normalization; it does not yet match persisted routines or execute actions. Platform mechanisms must be validated on representative Pixel and Samsung devices before any capability is labeled reliable.
 
 ## Build and test
 
